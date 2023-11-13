@@ -1,6 +1,5 @@
 import { Slot, component$ } from "@builder.io/qwik";
 import navLinks from "./nav-links.json";
-import { Content } from "./content";
 
 const Layout = component$(() => {
   return (
@@ -83,7 +82,7 @@ const Layout = component$(() => {
         </div>
         <main class="lg:pl-[12.5rem]">
           <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[15.5rem]">
-            Content: <Content />
+            Content: <Slot />
           </div>
         </main>
       </div>
